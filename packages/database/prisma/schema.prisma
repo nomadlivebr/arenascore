@@ -1,0 +1,21 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// =============================================================================
+// Models serão definidos na próxima etapa de desenvolvimento.
+// Exemplos do que virá:
+//   - Match (partida)
+//   - Score (placar)
+//   - Team (equipe)
+//   - Player (jogador)
+//   - Sport (modalidade esportiva)
+// =============================================================================
